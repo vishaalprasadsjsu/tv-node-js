@@ -24,7 +24,8 @@ app.post('/', function (req, res) {
 			res.render('index', {tv_summary: null, error: 'Error, please try again'});
 
 		} else {
-			let tv_summary_res = `Summary:\n${result[0].show.summary}`;
+			let tv_summary_res = `Summary of <b>${result[0].show.name}</b> (${result[0].show.network.name}):\n
+				${result[0].show.summary}`;
 			res.render('index', {tv_summary: tv_summary_res, error: null});
 		}
     }
