@@ -2,7 +2,7 @@
 
 Search for a TV show's Summary with this Node.js web application.  
 
-![](./screenshots/screenshot-friends.png)
+![](./screenshot/screenshot-friends.png)
 
 ## Installing and Running 
 Run this app with 
