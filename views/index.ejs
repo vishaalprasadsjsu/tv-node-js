@@ -2,16 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title>Movie Summary Tool</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
       <fieldset>
         <form action="/" method="post">
-          <input name="tv_show" type="text" class="input-field" placeholder="Enter a TV Show" required>
-          <input type="submit" class="btn-large waves-effect waves-light blue" value="Get Summary">
+          <input name="tv_show" type="text" class="ghost-input" placeholder="Enter a TV Show" required>
+          <input type="submit" class="ghost-button waves-effect waves-light blue" value="Get Summary">
         </form>
 
         <% if(tv_summary !== null){ %>
