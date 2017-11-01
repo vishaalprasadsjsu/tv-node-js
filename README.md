@@ -1,6 +1,6 @@
 # TV Show Summary Searcher 
 
-Search for a TV show's Summary with this Node.js web application.  
+Search for a TV show's Summary with this Node.js web application (uses [TVMaze APIs](http://www.tvmaze.com/api))
 
 ![](./screenshot/screenshot-friends.png)
 
