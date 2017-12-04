@@ -24,9 +24,13 @@ app.post('/', function (req, res) {
 				res.render('index', {tv_summary: null, error: 'Error, please try again'});
 
 			} else {
-				let tv_summary_res = `<h2>${result[0].show.name}</h2>\n
-					${result[0].show.summary}`;
-				res.render('index', {tv_summary: tv_summary_res, error: null});
+				try { 
+					let tv_summary_res = `<h2>${result[0].show.name}</h2>\n
+						${result[0].show.summary}`;
+					res.render('index', {tv_summary: tv_summary_res, error: null});
+				} catch (err) {
+					res.render('index', {tv_summary: null, error: 'Error, please try again'});
+				}
 			}
     	}
 	});
